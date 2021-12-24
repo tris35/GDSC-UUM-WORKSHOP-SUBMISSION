@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang"en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name"viewpoint"content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+<hr>	<title>Learning html Not Easy</title>
+
+
+<style>
+
+h1{	
+	font-size: 50px;
+	text-align:center;
+	font-size:200%
+	font-family:verdana;
+}
+
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+
+
+<h1>Hi, Tris Keow</h1>
+
+<body style = "background-color: powderblue;">
+
+	<h3 style = "font-family:verdana;">Link Reference HTML</h1>
+	<p>If u want reference html, can visit this link:</p>
+	<p><a href = "https://www.w3schools.com/tags/default.asp">Visit W3School></a></p>
+<hr>
+	<h3><i>Link Reference HTML (New Window)</i></h2>
+	<p>If u want open a new window to visit, click on this link:</p>
+	<p><a href = "https://www.w3schools.com/tags/default.asp"target ="_blank">Visit W3School</a></p>
+
+<pre>
+	<h3>Image As A Link</h3><p><b>This not an <mark>emoji</mark>, actually is a link:</p>
+	<a href = "https://www.w3schools.com/tags/default.asp"><img src = "https://imgix.bustle.com/uploads/image/2020/5/11/49197366-afef-4a82-ad40-8005ee2f07da-da0c9321-c21e-418e-a012-0b4b0c8a15e9-shutterstock-1233307138.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress"  
+	alt="HTML tutorial" style="width:42px;height:42px;"></a>
+</pre>
+
+	<h3>Link Reference HTML</h4>
+	<p><strong>Click the button to go to the HTML <del>punya</del><ins>tutorial</ins>.</strong></p>
+	<button onclick = "https://www.w3schools.com/tags/default.asp"><p style = "color: red;">Visit W3School</button onclick>
+
+
+<p>HTML allows moving images:</p>
+<img src="programming.gif" alt="Computer man" style="float:left;width:50px;height:43px;">
+
+
+<br>
+<br>
+<address>
+<p>Written by <sub>Tris Yin</sub><br></p>  <p>Gmail:<br>szeyinkeow@gmail.com<br></p>
+</address>
+
+
+
+
+<blockquote cite = "https://www.quora.com/What-does-Ganbatte-mean-in-Japanese-and-when-and-how-is-it-used">
+<p style = "border: 2px solid violet;"><q>Cheer up!</q></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+    <h1>The div element</h1>
+
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+
+    <p>This is some text outside the div element. </p>
+    </div>
+
+
+
+
+
+<hr>
+    <h2>Ordered and Unordered List</h2>
+
+    <ul>
+        <li>apples
+            <ol>
+                <li>delicious</li>
+                <li>red</li>
+                <li>juicy</li>
+            </ol>
+        </li>
+        <li>oranges</li>
+        <li>pineapples</li>
+        <li>mangoes</li>
+        <li>dragonfruits</li>
+    </ul>  
+
+<p>Small Table</p>
+
+<table border="5" cellpadding="5" cellspacing="0">
+<tr>
+    <td></td>
+    <th>Country</th>
+    <th colspan="2">Daily Cases</th>
+    <th>Daily Deaths</th>
+    <th>Daily Vacination Doses</th>
+</tr>
+
+<tr>
+    <td rowspan="3">High Risk</td>
+    <td>Malaysia</td>
+    <td>3200</td>
+    <td>10000</td>  
+    <td>60</td>
+    <td>35000</td>
+</tr>
+
+<tr>
+    <td>India</td>
+    <td>1500</td>
+    <td>12000</td> 
+    <td>30</td>
+    <td>30000</td>
+</tr>
+
+<tr>
+    <td>United Stated</td>
+    <td>2300</td>
+    <td>15000</td> 
+    <td>40</td>
+    <td>50000</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+<hr>
+<h1>The timetable in Suria Jerai Farlim</h1>
+
+
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
+    th{ 
+        text-align:center;
+    }
+    
+    th,td {
+        text-align:left;
+        padding:10px;
+    }
+    
+    tr:nth-child(odd){
+        background-color: #D6EEEE;
+    }
+    
+    tr {
+        bordercolor="black";
+        style="width:70%;
+    }
+    
+    tr:hover {background-color: #D6EEEE;}
+    
+    </style>
+
+    
+
+    <h2 style= "font-family:verdana;">B22 Duty Schedule</h2>
+    
+    <!--To set the width of a table-->
+    <table style= "width:70%">
+    
+    <!--To add a caption to a table,-->
+        <caption style= "font-family:arial black">Duty Schedule</caption>
+    
+    <!--colgroup used as a container for the column specifications should be put after caption, before tr,td-->
+    <!--span attribute specifies how many columns that gets the style-->
+    <colgroup>
+        <col span="1" style= "background-color: lightgreen">
+        <col span="1" style= "background-color: pink">
+    </colgroup>
+    
+    <!-- To make a cell span over multiple columns-->
+        <tr style= "text-align:center;">
+          <th colspan="2">Location</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+    
+    <!-- To set the height of a specific row-->
+    <!-- To make a cell span over multiple rows-->
+        <tr style="width:200px">
+          <th rowspan="2">Upstairs</th>
+          <th>Sweep Dust</th>
+          <td>MAL02</td>
+          <td>SAM04</td>
+          <td>AMIR</td>
+          <td>ZIY01</td>
+          <td>JJS01</td>
+          <td>ASWIN</td>
+          <td style = "background-color:lightgrey;"></td>
+        </tr>
+    
+        <tr>
+          <th>Sweep Floor</th>
+          <td>NSS06</td>
+          <td>NAN05</td>
+          <td>NAN05/NSS06</td>
+          <td>NAN05/NSS06</td>
+          <td>KSY01/RBI03</td>
+          <td>KSY01/RBI03</td>
+          <td>KSY01/RBI03</td>
+        </tr>
+    
+        <tr>
+          <th rowspan="2">Downstairs</th>
+          <th>Sweep Dust</th>
+          <td>SAM04</td>
+          <td>ZIY01</td>
+          <td>MAL02</td>
+          <td>JJS01</td>
+          <td>ASWIN</td>
+          <td>AMIR</td>
+          <td style = "background-color:lightgrey;"></td>
+        </tr>
+    
+        <tr>
+          <th>Sweep Floor</th>
+          <td>KSY01/RBI03</td>
+          <td>KSY01</td>
+          <td>KSY01/RBI03</td>
+          <td>RBI03</td>
+          <td>NAN05/NSS06</td>
+          <td>NAN05/NSS06</td>
+          <td>NAN05/NSS06</td>
+        </tr>
+    
+        <tr>
+          <th>Toilet</th>
+          <th>Wash Floor</th>
+          <td style = "background-color:lightgrey;"></td>
+          <td>MAL02/AMIR</td>
+          <td style = "background-color:lightgrey;"></td>
+          <td>SAM04/ASWIN</td>
+          <td style = "background-color:lightgrey;"></td>
+          <td>JJS01/ZIY01</td>
+          <td style = "background-color:lightgrey;"></td>
+        </tr>
+    
+        <tr>
+          <th>Outdoor</th>
+          <th>Sweep Floor</th>
+          <td>WAE01</td>
+          <td>LAC01</td>
+          <td>WAE01</td>
+          <td>LAC01</td>
+          <td>WAE01</td>
+          <td>LAC01</td>
+          <td style = "background-color:lightgrey;"></td>
+        </tr>
+    
+        <tr>
+          <th>Storeroom</th>
+          <td>Sweep Floor</td>
+          <td>JJS01</td>
+          <td style = "background-color:lightgrey;"></td>
+          <td>ASWIN</td>
+          <td>AMIR</td>
+          <td>ZIY01</td>
+          <td>MAL02</td>
+          <td>SAM04</td>
+        </tr>
+    
+    <p>*Remark:</p>
+    <p>1. Make sure come early to shop.</p>
+    <p>2. Take 25 minutes to do cleaning according task given.</p>
+    <p>3. All packing item and any issue after cleaning ask done.</p>
+    <p>4. Make sure maintain and don't skip. </p>
+    <p>5. If fail to do will issue warning. </p>
+    
+    
+</table>
+
+
+
+
+
+
+
+
+
+<hr>
+   
+<h1 style= "font-size:200%;"></h1>
+
+<h1><ins>Papan Tanda Lalu Lintas</ins><h1>
+</head>
+
+</style>
+
+<body style= "font-size: 100%", "text-align:left;">
+<h1>An Unordered HTML List</h1>
+<div class="papan tanda">
+<ul>
+<li>Berhenti Di Persimpangan</li>
+ <li>Dilarang Belok Ke Kiri</li>
+ <li>Dilarang belok ke kanan</li>
+ <li>Dilarang Berpusing Balik</li>
+ <li>Kenderaan Dilarang Masuk</li>
+ <li>Kenderaan Melebihi 8tan Dilarang Masuk</li>
+ <li>Kenderaan Melebihi 3.5m Tinggi Dilarang Masuk</li>
+ <li>Kenderaan Jenis Ini Dilarang Masuk</li>
+ <li>Motosikal Dilarang Masuk</li>
+ <li>Had Laju Tamat</li>
+ <li>Dilarang Meletak Kenderaan</li>
+ <li>Dilarang Berhenti</li>
+ <li>Dilarang Berbunyi Hon</li>
+ <li>Beri Laluan</li>
+</ul>
+</div>
+
+<h4>An Ordered HTML List</h4>
+<div>
+<ol>
+ <li>Kenderaan Melebihi 2.5m Lebar Dilarang Masuk</li>
+ <li>Berhenti Kanak-kanak Melintas</li>
+ <li>Dilarang Memotong</li>
+ <li>Ikut Arah</li>
+ <li>Jalan Terus Sahaja</li>
+ <li>Jalan Terus Atau Belok Ke Kanan Sahaja</li>
+ <li>Belok Ke Kiri Sahaja</li>
+ <li>Lorong basikal Sahaja</li>
+ <li>Lorong Motosikal Sahaja</li>
+ <li>Zon Tunda</li>
+ <li>Padang Permainan</li>
+ <li>Bongkol Di Hadapan</li>
+ <li>Jalan Tidak Rata</li>
+ <li>Simpang Jalan Ke Kiri Dan Ke Kanan</li>
+</ul>
+</div>
+
+<h4>Unordered List with Disc Bullets</h4>
+<div>
+<ul style="list-style-type:disc;">
+ <li>Liku Tajam</li>
+ <li>Simpang Empat</li>
+ <li>Lintasan Kereta Api Berpagar</li>
+ <li>Lintasan Kereta Api Berpagar Automatik</li>
+ <li>Lintasan Kereta Api Tanpa Pagar</li>
+ <li>Cerun Menurun</li>
+ <li>Cerun Meningkat</li>
+ <li>Liku Kiri</li>
+ <li>Liku Kanan</li>
+ <li>Jalan Bengkak-Bengkok</li>
+ <li>Bahu Jalan Lembut</li>
+ <li>Jalan Licin</li>
+ <li>Lintasan Pejalan Kaki</li>
+ <li>Lintasan Kanak-kanak Melintas</li>
+ <li>Berhati-hati</li>
+</ul>
+</div>
+
+<h4>Unordered List with Circle Bullets</h4>
+<div>
+<ul style="list-style-type:circle;">
+ <li>Papan Tanda Berhenti Di Hadapan</li>
+ <li>Papan Tanda Beri Laluan Di Hadapan</li>
+ <li>Jalan Sempit Di Hadapan</li>
+ <li>Jalan Semakin Sempit</li>
+ <li>Lampu Isyarat Di Hadapan</li>
+ <li>Halangan Di Hadapan</li>
+ <li>Simpang Tak Serentak</li>
+ <li>Simpang Tak Serentak Dengan Satu Jalan Ditutup</li>
+ <li>Simpang Tiga</li>
+ <li>Simpang Kanan</li>
+ <li>Simpang Kiri</li>
+ <li>Jalan Menyimpang Di Sebelah Kanan</li>
+ <li>Jalan Menyimpang Di Sebelah Kiri</li>
+ <li>Jalan Kecil Bercantum Di Sebelah Kanan</li>
+ <li>Jalan Kecil Bercantum Di Sebelah Kiri</li>
+</ul>
+</div>
+
+<h4>Unordered List with Square Bullets</h4>
+<div>
+<ul style="list-style-type:square;">
+ <li>Kawasan Tanah Runtuh</li>
+ <li>Kawasan Lembu Melintas</li>
+ <li>Bulatan Di Hadapan</li>
+ <li>Lorong Meningkat</li>
+ <li>Lorong Menurun</li>
+ <li>Orang Tua Melintas</li>
+ <li>Lintasan Orang Cacat</li>
+ <li>Jabatan Sempit</li>
+ <li>Berpisah Arah</li>
+ <li>Jalan Dua Hala</li>
+ <li>Jalan Kembar Tamat</li>
+ <li>Jalan Kembar Di Hadapan</li>
+ <li>Stesen Jambatan Timbang</li>
+ <li>Kawasan Binatang Liar Melintas</li>
+ <li>Tanda Halangan</li>
+</ul>
+</div>
+
+<h4>A Nested List</h4>
+<div>
+<ul>
+ <li>Tanda Arah Selekoh Ke Kanan</li>
+ <li>Tanda Arah Selekoh Ke Kiri</li>
+ <li>Zon Had Laju Di Hadapan</li>
+ <li>Peringatan Di Zon Had Laju</li>
+ <li>Perhentian Bas</li>
+ <li>Telefon Awam</li>
+	<ul>
+ 	 	<li>Tempat Meletak Kenderaan</li>
+ 	 	<li>Pusat Kesihatan</li>
+ 	 	<li>Hospital</li>
+ 	 	<li>Stesen Minyak</li>
+	</ul>
+ <li>Jalan Mati</li>
+ <li>Dibenarkan Berpusing Balik</li>
+ <li>Jalan Sedang Diperbaiki</li>
+ <li>Lencongan</li>
+ <li>Jalan Melencong Selekoh Tajam</li>
+</ul>
+</div>
+
+<h4>Unordered List without Bullet</h4>
+<div>
+<ul style="list-style-type:none;">
+ <li>Papan Tanda Tempat Tuju</li>
+ <li>Papan Tanda Tunjuk Arah</li>
+ <li>Papan Tanda Tunjuk Arah Dengan Papan Tanda Kawasan Pelancongan</li>
+</ul>
+</div>
+
+<h4>A Description List</h4>
+<div>
+<dl>
+ <dt>Dilarang Meletak Kenderaan</dt>
+ <dd>Satu Garisan</dd>
+ <dt>Dilarang Berhenti</dt>
+ <dd>Pangkal Garisan</dd>
+</dl>
+</div>
+
+
+
+
+<h4>The span element</h4>
+
+<p>You don't always need a <span style="color:blue;font-weight:bold">plan</span>. Sometimes you just need to breathe, trust, let go and <span 
+style="color:darkolivegreen;font-weight:bold">see what happens</span>.</p>
+<q>Gambateh</q>
+
+
+
+
+
+
+
+<hr>
+<h1 id="help">Hello World!</h1>
+<button onclick="displayResult()">Click it. The text will change</button>
+
+<script>
+function displayResult() {
+  document.getElementById("help").innerHTML = "Have a nice day!";
+}
+</script>
+</body>
+</html>
