@@ -1,0 +1,60 @@
+package com.codejava.Array;
+
+public class Array {
+    public static void main(String[] args) {
+        String[] fullName= {"Keow", "Sze Wei"};
+
+        //print array using each loop
+        for(int i=0; i < fullName.length; i++) {
+            System.out.println(fullName[i]);
+        }
+
+    }
+}
+
+public class If {
+    public static void main(String[] args) {
+        int myAge = 15;
+        int theirAge = 20;
+
+        if (myAge <= theirAge) {
+            System.out.println("I am younger");
+        } else {
+            System.out.println("I am older");
+        }
+    }
+}
+
+public class Student {
+    String name = "Keow Sze Yin";
+    int age = 20;
+
+    public static void main(String[] args) {
+        Student name = new Student();
+        Student age = new Student();
+        name.tellmyName();
+        age.tellmyAge();
+    }
+
+    public void tellmyName() {
+        System.out.println(name);
+    }
+
+    public void tellmyAge() {
+        System.out.println(age);
+    }
+}
+
+public class tutorial {
+    String[] name = {"My name: Keow Sze Yin, age: 20"};
+    String[] idol = {"My idol: Jackson Yee, age: 21"};
+
+    public static void main(String[] args) {
+
+        tutorial myObj1 = new tutorial();
+        tutorial myObj2 = new tutorial();
+        System.out.println(Arrays.toString(myObj1.name));
+        System.out.println(Arrays.toString(myObj2.idol));
+
+    }
+}
